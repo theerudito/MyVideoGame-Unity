@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
   [SerializeField] private LayerMask _floorMask;
   [SerializeField] private Animator _playerAnimator;
   [SerializeField] private SpriteRenderer _playerSpriteRenderer;
-  
+
   string directionPlayer = "Horizontal";
   string jumpPlayer = "Jumping";
   string maskFloor = "Floor";
@@ -41,11 +41,13 @@ public class Player : MonoBehaviour
   void Update()
   {
     MovePlayer();
+    //sasas
   }
 
   void FixedUpdate()
   {
     _isGrounded = Physics2D.OverlapCircle(_chechGroundObj.position, checkRadius, _floorMask);
+
   }
 
   public void MovePlayer()
@@ -54,6 +56,7 @@ public class Player : MonoBehaviour
     {
       _playerRB.velocity = new Vector2(_playerSpeed * direction, _playerRB.velocity.y * Time.deltaTime);
       transform.eulerAngles = new Vector3(0, direction == 1 ? 0 : 180, 0);
+
     }
   }
 
@@ -105,7 +108,7 @@ public class Player : MonoBehaviour
 
   void OnCollisionExit2D(Collision2D other)
   {
-
+    Debug.Log("Exit");
 
   }
 
