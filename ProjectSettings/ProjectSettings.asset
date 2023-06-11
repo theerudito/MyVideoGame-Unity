@@ -249,7 +249,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: F:/Dropbox/keys/myGame.keystore
+  AndroidKeystoreName: '{inproject}: apk/rj45.keystore'
   AndroidKeyaliasName: jorge
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
