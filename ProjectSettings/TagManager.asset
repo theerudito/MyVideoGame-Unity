@@ -9,6 +9,7 @@ TagManager:
   - Door
   - EnemyOne
   - AddBullet
+  - Wall
   layers:
   - Default
   - TransparentFX

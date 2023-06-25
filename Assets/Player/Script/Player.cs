@@ -78,7 +78,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         MovePlayer();
-        //sasas
     }
 
     void FixedUpdate()
@@ -130,7 +129,7 @@ public class Player : MonoBehaviour
         {
             numBullet--;
             textNumBullet.text = numBullet.ToString();
-            Instantiate(_bulletPlayer, _playerSpawn.position, Quaternion.identity);
+            Instantiate(_bulletPlayer, _playerSpawn.position, _playerSpawn.rotation);
         }
     }
 
@@ -141,20 +140,6 @@ public class Player : MonoBehaviour
             numBullet += 5;
             textNumBullet.text = numBullet.ToString();
             Destroy(other.gameObject);
-        }
-    }
-
-    void OnCollisionExit2D(Collision2D other)
-    {
-        Debug.Log("Exit");
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("BulletEnemy"))
-        {
-            Debug.Log("Hit");
-            Destroy(gameObject);
         }
     }
 }

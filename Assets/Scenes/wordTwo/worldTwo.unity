@@ -465,6 +465,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ScriptWorldTwo, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5730400081114517400, guid: 13fc31afc5f466c40a33434886ada162, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5730400081114517402, guid: 13fc31afc5f466c40a33434886ada162, type: 3}
       propertyPath: m_Name
       value: PanelDialog
